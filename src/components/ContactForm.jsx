@@ -99,17 +99,32 @@ function ContactForm() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit =async (e) => {
+
     e.preventDefault();
-    console.log(formData);
-    // Add form submission logic here
-    alert('Thank you for contacting us! We will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: ''
-    });
+    try {
+      const response = await fetch('https://api.simpech.com/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        alert('Thank you for contacting us! We will get back to you soon.');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: ''
+        });
+      } else {
+        alert('Failed to send your message. Please try again later.');
+      }
+    } catch (error) {
+      alert('Failed to send your message. Please try again later.');
+    }
+   
   };
 
   return (
