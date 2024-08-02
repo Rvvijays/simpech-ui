@@ -9,6 +9,11 @@ body {
     text-align: center;
     padding: 2rem;
   }
+
+  .txt-center {
+    text-align: center;
+    width: 100%;
+  }
   
   .header {
     background-color: #282c34;

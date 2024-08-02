@@ -9,6 +9,11 @@ const HomeWrapper = styled.div`
   background: #f4f4f9;
 `;
 
+const DivWrapper = styled.div`
+text-align: center;
+width:100%;
+`;
+
 const Heading = styled.h1`
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -30,10 +35,11 @@ const Paragraph = styled.p`
   margin-bottom: 2rem;
 `;
 
-const ContactLink = styled(Link)`
+const ContactLink = styled.span`
   color: #6e0cd0;
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
 
   &:hover {
     text-decoration: underline;
@@ -59,9 +65,16 @@ const Home = () => {
     <HomeWrapper>
       <Heading>Welcome to Simpech!</Heading>
       <Tagline>Simplicity in Technology</Tagline>
-      <SubTagline>We're launching soon, and we want to reward you with exclusive early discounts. <ContactLink to="/contact">Contact us</ContactLink> now to be among the first to benefit!</SubTagline>
+      <SubTagline>We're launching soon, and we want to reward you with exclusive early discounts. <ContactLink>Contact us</ContactLink> now to be among the first to benefit!</SubTagline>
+
 
       <Section>
+
+        <DivWrapper>
+          <span>Email: ranvijay@simpech.com</span>
+          <br />
+          <span>Phone/WhatsApp: +91 9803941287</span>
+        </DivWrapper>
         <Paragraph>
           At Simpech, we believe that technology should be simple, intuitive, and empowering. Our mission is to transform your ideas into reality with elegance and efficiency. Whether you're looking for cutting-edge web development, innovative software solutions, or seamless mobile app experiences, we are here to deliver exceptional results without the complexity.
         </Paragraph>
@@ -85,7 +98,7 @@ const Home = () => {
           <li><strong>Maintenance and Support:</strong> Offering reliable support and maintenance services to keep your technology running smoothly. We handle updates, bug fixes, and performance enhancements so you can focus on what matters most.</li>
         </ul>
         <Paragraph>
-          Ready to elevate your technology with simplicity and style? <ContactLink to="/contact">Contact us</ContactLink> today to discuss your project and see how Simpech can make a difference.
+          Ready to elevate your technology with simplicity and style? <ContactLink>Contact us</ContactLink> today to discuss your project and see how Simpech can make a difference.
         </Paragraph>
         <Paragraph>
           At Simpech, simplicity is more than just a tagline – it's the core of our approach. Experience technology that’s as straightforward as it is powerful.
