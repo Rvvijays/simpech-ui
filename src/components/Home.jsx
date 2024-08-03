@@ -73,7 +73,7 @@ const Home = () => {
         <DivWrapper>
           <span>Email: ranvijay@simpech.com</span>
           <br />
-          <span>Phone/WhatsApp: +91 9803941287</span>
+          <span>Phone/WhatsApp: +91 98039 41287 / +91 93550 98542</span>
         </DivWrapper>
         <Paragraph>
           At Simpech, we believe that technology should be simple, intuitive, and empowering. Our mission is to transform your ideas into reality with elegance and efficiency. Whether you're looking for cutting-edge web development, innovative software solutions, or seamless mobile app experiences, we are here to deliver exceptional results without the complexity.
